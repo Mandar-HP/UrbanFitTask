@@ -1,0 +1,2 @@
+rootProject.name = "UrbanFit"
+include ':app'

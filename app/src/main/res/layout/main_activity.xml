@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreenActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/trackerLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            >
+
+            <Button
+
+                android:id="@+id/calorieBtnXml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/circular_shape"
+                android:text="Track Calorie"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/waterBtnXml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Water"
+                android:textColor="@color/white"
+                android:background="@drawable/circular_shape"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/workoutBtnXml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Workout"
+                android:textColor="@color/white"
+                android:background="@drawable/circular_shape"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/sleepBtnXml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Sleep"
+                android:textColor="@color/white"
+                android:background="@drawable/circular_shape"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frameLayoutMainScren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/trackerLinearLayout"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:id="@+id/componentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Water Glass consumption :"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/waterDataTxtBoxXml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sleep hours :"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/sleepHrsTxtBoxXml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Calorie Intake :"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/calorieIntakeTxtBoxXml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/trackBttnXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_add_circle_24"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

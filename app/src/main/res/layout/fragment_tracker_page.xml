@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TrackerPage">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        >
+
+        <Button
+            android:id="@+id/calorieTrackXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Calorie"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/waterTrackXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Water"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Workout"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/sleepTrackXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Sleep"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="@color/white" />
+
+
+    </GridLayout>
+
+
+
+</FrameLayout>
